@@ -1,0 +1,15 @@
+
+<button name="all" [ngClass]="['clicked']" (click)='All()'>All</button>
+<button (click)='OnlyDone()'>Done</button>
+<button (click)='NotDone()' style="color: blue">NotDone</button>
+<table class="table table-striped">
+
+    <tr *ngFor = "let eachList of todoList" >
+        
+        <td>{{eachList.title}}</td>
+        <td>{{eachList.completed}}</td>
+    </tr>
+</table>
+
+
+
